@@ -1,7 +1,7 @@
 # kegg_genes_to_R
 Generating lists of genes in Kegg pathway for R
 
-Python script takes Kegg pathway identifier (e.g. mmu04071) and generates a text file with all the Kegg genes from that pathway. attach_gene_name function in R script uses input from the text file and converts it into external gene names for downstream analysis in R.
+Python script takes Kegg pathway identifier (e.g. mmu04071) and generates a text file with all the Kegg genes from that pathway. attach_gene_name_kegg function in R script uses input from the text file and converts it into external gene names for downstream analysis in R.
 
 ## Python script
 
@@ -35,7 +35,7 @@ library("readr")
 
 
 ```
-load in dependencies and run the R script file in RStudio. This will create a function called attach_gene_name_kegg. You can create an R data.frame with external gene names under gene_names column and the title of the Kegg pathway under Kegg which can be used in the downstream functional analysis. You will need the text file from the python script in the working directory
+load in dependencies and run the R script file "attach_gene_name_kegg.R" in RStudio. This will create a function called attach_gene_name_kegg. You can create an R data.frame with external gene names under gene_names column and the title of the Kegg pathway under Kegg which can be used in the downstream functional analysis. You will need the text file from the python script in the working directory
 
 ```{r, echo = TRUE, eval = TRUE, collapse = TRUE}
 
